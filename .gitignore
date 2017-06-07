@@ -1,0 +1,5 @@
+build
+dist
+*.pyc
+bep_pcb_check.egg-info
+doc/_build
