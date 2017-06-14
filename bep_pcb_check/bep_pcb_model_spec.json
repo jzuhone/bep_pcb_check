@@ -181,7 +181,7 @@
                     0.79
                 ], 
                 "eclipse_comp": "eclipse", 
-                "epoch": "2016:014", 
+                "epoch": "2016:076", 
                 "pitch_comp": "pitch", 
                 "simz_comp": "sim_z", 
                 "var_func": "linear"
@@ -232,8 +232,8 @@
             "name": "prop_heat__tmp_bep_pcb"
         }
     ], 
-    "datestart": "2014:294:12:05:20.816", 
-    "datestop": "2017:097:23:51:52.816", 
+    "datestart": "2014:356:12:01:28.816", 
+    "datestop": "2017:159:23:53:28.816", 
     "dt": 328.0, 
     "gui_config": {
         "filename": "/home/jzuhone/Source/bep_pcb_check/bep_pcb_check/bep_pcb_model_spec.json", 
@@ -244,8 +244,8 @@
         ], 
         "set_data_vals": {}, 
         "size": [
-            1400, 
-            800
+            1820, 
+            992
         ]
     }, 
     "mval_names": [], 
@@ -259,17 +259,17 @@
             "max": 50.0, 
             "min": -10.0, 
             "name": "val", 
-            "val": 10.0
+            "val": 0.0
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
             "fmt": "{:.4g}", 
-            "frozen": false, 
+            "frozen": true, 
             "full_name": "solarheat__tmp_bep_pcb__P_45", 
             "max": 2.0, 
             "min": 0.0, 
             "name": "P_45", 
-            "val": 0.10709127457399548
+            "val": 0.2035707791403073
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -279,7 +279,7 @@
             "max": 2.0, 
             "min": 0.0, 
             "name": "P_60", 
-            "val": 0.27431728180628889
+            "val": 0.39235512753652035
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -289,17 +289,17 @@
             "max": 2.0, 
             "min": 0.0, 
             "name": "P_90", 
-            "val": 0.48146192032828056
+            "val": 0.5822456997576031
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "solarheat__tmp_bep_pcb__P_105", 
             "max": 2.0, 
             "min": 0.0, 
             "name": "P_105", 
-            "val": 0.90149286758527158
+            "val": 0.92630641483101628
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -309,7 +309,7 @@
             "max": 10.0, 
             "min": -10.0, 
             "name": "P_120", 
-            "val": 1.3108025129215335
+            "val": 1.3238757200873104
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -319,7 +319,7 @@
             "max": 2.0, 
             "min": 0.0, 
             "name": "P_130", 
-            "val": 1.4686033817574464
+            "val": 1.4712187973473014
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -329,7 +329,7 @@
             "max": 10.0, 
             "min": -10.0, 
             "name": "P_140", 
-            "val": 1.6147213767015245
+            "val": 1.6310982599054566
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -339,7 +339,7 @@
             "max": 2.0, 
             "min": 0.0, 
             "name": "P_150", 
-            "val": 1.6819510620497229
+            "val": 1.6924672774470537
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -349,7 +349,7 @@
             "max": 10.0, 
             "min": -10.0, 
             "name": "P_160", 
-            "val": 1.6580849098534434
+            "val": 1.676797630650112
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -359,7 +359,7 @@
             "max": 2.0, 
             "min": 0.0, 
             "name": "P_180", 
-            "val": 1.870832461965426
+            "val": 1.8379218722223636
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -369,37 +369,37 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_45", 
-            "val": 0.097465477643097737
+            "val": 0.04995592939657395
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "solarheat__tmp_bep_pcb__dP_60", 
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_60", 
-            "val": -0.015521442261943861
+            "val": 0.00035400912919091379
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "solarheat__tmp_bep_pcb__dP_90", 
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_90", 
-            "val": 0.14992898315880623
+            "val": 0.024945645453453132
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
             "fmt": "{:.4g}", 
-            "frozen": true, 
+            "frozen": false, 
             "full_name": "solarheat__tmp_bep_pcb__dP_105", 
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_105", 
-            "val": 0.037243496840238366
+            "val": 0.012625372288261421
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -409,7 +409,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_120", 
-            "val": 0.054148816038882074
+            "val": 0.061904449220569147
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -419,7 +419,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_130", 
-            "val": 0.078075233805770056
+            "val": 0.044082620003022079
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -429,7 +429,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_140", 
-            "val": 0.071049702865716213
+            "val": 0.058308468821062075
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -439,7 +439,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_150", 
-            "val": 0.073322443168350113
+            "val": 0.078362859852863703
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -449,7 +449,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_160", 
-            "val": 0.095467756257319014
+            "val": 0.10068307148935722
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -459,7 +459,7 @@
             "max": 1.0, 
             "min": -1.0, 
             "name": "dP_180", 
-            "val": -0.093862556324619012
+            "val": -0.26969456037629602
         }, 
         {
             "comp_name": "solarheat__tmp_bep_pcb", 
@@ -509,7 +509,7 @@
             "max": 5.0, 
             "min": -5.0, 
             "name": "P_plus_y", 
-            "val": 0.84985810590350197
+            "val": 0.90226246190630954
         }, 
         {
             "comp_name": "solarheat_off_nom_roll__tmp_bep_pcb", 
@@ -519,7 +519,7 @@
             "max": 5.0, 
             "min": -5.0, 
             "name": "P_minus_y", 
-            "val": 0.5507993895040304
+            "val": 0.45502185406549289
         }, 
         {
             "comp_name": "heatsink__tmp_bep_pcb", 
@@ -679,7 +679,7 @@
             "max": 2.0, 
             "min": 0.0, 
             "name": "k", 
-            "val": 0.12711828326052854
+            "val": 0.160928708065216
         }, 
         {
             "comp_name": "prop_heat__tmp_bep_pcb", 
@@ -689,7 +689,7 @@
             "max": 100.0, 
             "min": -50.0, 
             "name": "T_set", 
-            "val": 19.004596840654244
+            "val": 17.000045143876918
         }
     ], 
     "tlm_code": null
