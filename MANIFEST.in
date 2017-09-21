@@ -1,1 +1,1 @@
-include fep1mong_check/fep1mong_model_spec.json
+include bep_pcb_check/bep_pcb_model_spec.json
