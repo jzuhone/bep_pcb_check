@@ -29,7 +29,7 @@ model_path = os.path.abspath(os.path.dirname(__file__))
 MSID = dict(bep_pcb='TMP_BEP_PCB')
 # This is the Yellow High IPCL limit.
 # 05/2014 - changed from 35.0 to 37.5
-YELLOW = dict(bep_pcb=45.0)
+YELLOW = dict(bep_pcb=44.0)
 # This is the difference between the Yellow High IPCL limit and 
 # the Planning Limit. So the Planning Limit is YELLOW - MARGIN
 #
