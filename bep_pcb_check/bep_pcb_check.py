@@ -75,11 +75,11 @@ bep_pcb_check = ACISThermalCheck("tmp_bep_pcb", "bep_pcb", MSID,
                                   HIST_LIMIT, calc_model)
 
 def main():
-    opt, args = get_options("TMP_BEP_PCB", "bep_pcb", model_path)
+    args = get_options("TMP_BEP_PCB", "bep_pcb", model_path)
     try:
-        bep_pcb_check.driver(opt)
+        bep_pcb_check.driver(args)
     except Exception as msg:
-        if opt.traceback:
+        if args.traceback:
             raise
         else:
             print("ERROR:", msg)
