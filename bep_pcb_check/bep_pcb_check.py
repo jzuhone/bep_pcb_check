@@ -23,7 +23,7 @@ from acis_thermal_check import \
     ACISThermalCheck, \
     calc_off_nom_rolls, \
     get_options, \
-    state_builders
+    make_state_builder
 import os
 
 model_path = os.path.abspath(os.path.dirname(__file__))
@@ -54,12 +54,12 @@ def calc_model(model_spec, states, start, stop, T_bep=None, T_bep_times=None):
 
 def main():
     args = get_options("bep_pcb", model_path)
-    bep_pcb_check = ACISThermalCheck("tmp_bep_pcb", "bep_pcb",
-                                     state_builders[args.state_builder], MSID,
+    state_builder = make_state_builder(args.state_builder, args)
+    bep_pcb_check = ACISThermalCheck("tmp_bep_pcb", "bep_pcb", MSID,
                                      YELLOW, MARGIN, VALIDATION_LIMITS,
                                      HIST_LIMIT, calc_model)
     try:
-        bep_pcb_check.driver(args)
+        bep_pcb_check.driver(args, state_builder)
     except Exception as msg:
         if args.traceback:
             raise
