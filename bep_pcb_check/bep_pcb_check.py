@@ -23,13 +23,16 @@ from acis_thermal_check import \
     ACISThermalCheck, \
     calc_off_nom_rolls, \
     get_options, \
-    make_state_builder
+    make_state_builder, \
+    get_acis_limits
 import os
 
 model_path = os.path.abspath(os.path.dirname(__file__))
 
+yellow_hi, red_hi = get_acis_limits("tmp_bep_pcb")
+
 MSID = {"bep_pcb": 'TMP_BEP_PCB'}
-YELLOW = {"bep_pcb": 44.0}
+YELLOW = {"bep_pcb": yellow_hi}
 MARGIN = {"bep_pcb": 2.0}
 VALIDATION_LIMITS = {'TMP_BEP_PCB': [(1, 2.0), (50, 1.0), (99, 2.0)],
                      'PITCH': [(1, 3.0), (99, 3.0)],
