@@ -22,25 +22,19 @@ import sys
 from acis_thermal_check import \
     ACISThermalCheck, \
     calc_off_nom_rolls, \
-    get_options, \
-    make_state_builder, \
-    get_acis_limits
+    get_options
 import os
 
 model_path = os.path.abspath(os.path.dirname(__file__))
 
-yellow_hi, red_hi = get_acis_limits("tmp_bep_pcb")
-
-MSID = {"bep_pcb": 'TMP_BEP_PCB'}
-YELLOW = {"bep_pcb": yellow_hi}
-MARGIN = {"bep_pcb": 2.0}
 VALIDATION_LIMITS = {'TMP_BEP_PCB': [(1, 2.0), (50, 1.0), (99, 2.0)],
                      'PITCH': [(1, 3.0), (99, 3.0)],
                      'TSCPOS': [(1, 2.5), (99, 2.5)]
                      }
 HIST_LIMIT = [20.]
 
-def calc_model(model_spec, states, start, stop, T_bep=None, T_bep_times=None):
+def calc_model(model_spec, states, start, stop, T_bep=None, T_bep_times=None,
+               dh_heater=None, dh_heater_times=None):
     model = xija.ThermalModel('bep_pcb', start=start, stop=stop,
                               model_spec=model_spec)
     times = np.array([states['tstart'], states['tstop']])
@@ -57,12 +51,11 @@ def calc_model(model_spec, states, start, stop, T_bep=None, T_bep_times=None):
 
 def main():
     args = get_options("bep_pcb", model_path)
-    state_builder = make_state_builder(args.state_builder, args)
-    bep_pcb_check = ACISThermalCheck("tmp_bep_pcb", "bep_pcb", MSID,
-                                     YELLOW, MARGIN, VALIDATION_LIMITS,
-                                     HIST_LIMIT, calc_model)
+    bep_pcb_check = ACISThermalCheck("tmp_bep_pcb", "bep_pcb", 
+                                     VALIDATION_LIMITS, HIST_LIMIT, 
+                                     calc_model, args)
     try:
-        bep_pcb_check.driver(args, state_builder)
+        bep_pcb_check.run()
     except Exception as msg:
         if args.traceback:
             raise
