@@ -634,16 +634,6 @@
             "comp_name": "dpa_power", 
             "fmt": "{:.4g}", 
             "frozen": true, 
-            "full_name": "dpa_power__pow_55x0", 
-            "max": 120, 
-            "min": 20, 
-            "name": "pow_55x0", 
-            "val": 63.57276230245273
-        }, 
-        {
-            "comp_name": "dpa_power", 
-            "fmt": "{:.4g}", 
-            "frozen": true, 
             "full_name": "dpa_power__pow_5xxx", 
             "max": 120, 
             "min": 20, 
