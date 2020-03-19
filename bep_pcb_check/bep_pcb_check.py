@@ -25,6 +25,7 @@ import os
 
 model_path = os.path.abspath(os.path.dirname(__file__))
 
+
 class BEPPCBCheck(DPABoardTempCheck):
     def __init__(self):
         valid_limits = {'TMP_BEP_PCB': [(1, 2.0), (50, 1.0), (99, 2.0)],
@@ -32,7 +33,7 @@ class BEPPCBCheck(DPABoardTempCheck):
                         'TSCPOS': [(1, 2.5), (99, 2.5)]
                        }
         hist_limit = [20.0, 20.0] # First limit is >=, second limit is <=
-        super(BEPPCBCheck, self).__init__("tmp_bep_pcb", "fep1_pcb",
+        super(BEPPCBCheck, self).__init__("tmp_bep_pcb", "bep_pcb",
                                           valid_limits, hist_limit)
 
 
