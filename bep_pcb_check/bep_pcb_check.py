@@ -9,14 +9,12 @@ This code generates backstop load review outputs for checking the ACIS
 BEP PCB temperature. It also generates BEP PCB model validation plots
 comparing predicted values to telemetry for the previous three weeks.
 """
-from __future__ import print_function
 
-# Matplotlib setup                                                                                                                                              
-# Use Agg backend for command-line (non-interactive) operation                                                                                                   
+# Matplotlib setup
+# Use Agg backend for command-line (non-interactive) operation
 import matplotlib
 matplotlib.use('Agg')
 
-import numpy as np
 import sys
 from acis_thermal_check import \
     DPABoardTempCheck, \
