@@ -1,7 +1,15 @@
-__version__ = "0.1.0"
+import ska_helpers
+
+__version__ = ska_helpers.get_version(__package__)
 
 from .bep_pcb_check import \
-    calc_model, \
-    validation_limits, \
-    hist_limit, \
+    BEPPCBCheck, main, \
     model_path
+
+
+def test(*args, **kwargs):
+    """
+    Run py.test unit tests.
+    """
+    import testr
+    return testr.test(*args, **kwargs)
