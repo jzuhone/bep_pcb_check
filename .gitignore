@@ -3,3 +3,6 @@ dist
 *.pyc
 bep_pcb_check.egg-info
 doc/_build
+bep_pcb_check/tests/answers/*/*[.png, .csv, .css]
+bep_pcb_check/tests/answers/*/index.*
+bep_pcb_check/tests/answers/*/run.dat
